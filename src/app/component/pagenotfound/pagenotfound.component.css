@@ -1,7 +1,14 @@
 .error-box {
     height: 100%;
     position: fixed;
-    width: 100%; 
+    width: 100%;
+    background-image: url('src/assets/media/cover.png');
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    height: 100vh;
+    overflow: hidden !important;
 }
 
 .error-box .footer {
@@ -15,8 +22,17 @@
 }
 
 .error-body h1 {
-    font-size: 210px;
+    font-size: 100px;
     font-weight: 900;
-    text-shadow: 4px 4px 0 #ffffff, 6px 6px 0 #263238;
+    color: #ffffff;
+    text-shadow: 4px 4px 0 #263238;
     line-height: 210px;
+}
+
+.error-body h3, p, a {
+    color: #ffffff;
+}
+
+.error-body a {
+    color: #057F86;
 }

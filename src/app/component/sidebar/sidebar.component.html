@@ -7,10 +7,10 @@
                 <li class="user-profile">
                     <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><img src="assets/images/users/profile.png" alt="user" /><span class="hide-menu">Steave Jobs </span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a routerLink="/mi-perfil" routerLinkActive="active" class="pointer">Mi Perfil </a></li>
-                        <li><a routerLink="/notificaciones-recibidas" routerLinkActive="active" class="pointer">Notificaciones</a></li>
-                        <li><a routerLink="/tema" routerLinkActive="active" class="pointer">Temas</a></li>
-                        <li><a routerLink="/login" class="pointer">Cerrar Sesión</a></li>
+                        <li><a (click)="hideMenu()" routerLink="/mi-perfil" routerLinkActive="active" class="pointer">Mi Perfil </a></li>
+                        <li><a (click)="hideMenu()" routerLink="/notificaciones-recibidas" routerLinkActive="active" class="pointer">Notificaciones</a></li>
+                        <li><a (click)="hideMenu()" routerLink="/tema" routerLinkActive="active" class="pointer">Temas</a></li>
+                        <li><a (click)="hideMenu()" routerLink="/login" class="pointer">Cerrar Sesión</a></li>
                     </ul>
                 </li>
                 <li class="nav-devider"></li>
@@ -18,11 +18,11 @@
                 <li class="nav-small-cap">Menú de Opciones</li>
 
                 <li *ngFor="let menu of sidebarService.menu">
-                    <a *ngIf="!menu.subMenu.length" [routerLink]="menu.url" routerLinkActive="active"><i [class]="menu.icon"></i><span class="hide-menu">{{menu.title}}</span></a>
+                    <a (click)="hideMenu()" *ngIf="!menu.subMenu.length" [routerLink]="menu.url" routerLinkActive="active"><i [class]="menu.icon"></i><span class="hide-menu">{{menu.title}}</span></a>
                     <a *ngIf="menu.subMenu.length" class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu.icon"></i><span class="hide-menu">{{menu.title}}</span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li *ngFor="let subMenu of menu.subMenu">
-                            <a [routerLink]="subMenu.url" routerLinkActive="active">{{subMenu.title}}</a>
+                            <a (click)="hideMenu()" [routerLink]="subMenu.url" routerLinkActive="active">{{subMenu.title}}</a>
                         </li>
                     </ul>
                 </li>

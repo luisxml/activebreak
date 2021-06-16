@@ -2,7 +2,7 @@ import { Injectable, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 // Models
-import { ThemeSetting } from '../../models/theme-setting.interface';
+import { ThemeSetting } from '../../models/general/theme-setting.interface';
 
 @Injectable({
   providedIn: 'root'

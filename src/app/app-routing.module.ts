@@ -9,10 +9,6 @@ const routes: Routes = [
         loadChildren: () => import('./authentication/login/login.module').then( m => m.LoginModule)
     },
     {
-        path: 'register',
-        loadChildren: () => import('./authentication/register/register.module').then( m => m.RegisterModule)
-    },
-    {
         path: '',
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
         canLoad: []

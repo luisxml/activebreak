@@ -1,7 +1,86 @@
 {
     "general": {
-        "lblCargando": "Cargando..."
+        "lblTitle": "Active Break",
+        "lblClosedSession": "Cerrar Sesión",
+        "lblLoading": "Cargando ...",
+        "lblFilter":"Filtros:",
+        "lblFilterBy":"Filtrar por:",
+        "lblShowRows":"Mostrar filas:",
+        "lblStartDate": "Fecha desde:",
+        "lblEndDate": "Fecha hasta:",
+        "lblClear": "Limpiar",
+        "lblFooter": "2021© - Antamina",
+        "lblTypeDocument":"Tipo Documento",
+        "lblUserProfile": "Perfil de Usuario",
+        "lblSearch": "Buscar",
+        "lblWelcome": "Bienvenido",
+        "lblConfirm": "Confirmar",
+        "lblButtonYes":"<button><b>SI</b></button>",
+        "lblButtonNo":"<button>NO</button>",
+        "lblConfirmDelete":"¿Está seguro de eliminar?",
+        "lblThanks":"¡Gracias!",
+        "lblNo":"No",
+        "lblYes":"Si",
+        "lblRequired":" *",
+        "lblSelect":"-- Seleccione --"
     },
-    "sumaryBody": {},
-    "optionBody": {}
+    "component":{
+        "lblBirthDate":"Fecha Nacimiento",
+        "lblDocumentNumber":"Número Documento",
+        "lblTypeDocument":"Tipo Documento",
+        "lblName":"Nombres",
+        "lblLastFirstName":"Apellido Materno",
+        "lblLastSecondName":"Apellido Paterno",
+        "lblEmail":"Correo",
+        "lblMonthlyIncome":"Ingreso Mensual",
+        "lblAttachFile":"Adjuntar Archivo",
+        "lblExamine":"Examinar ..."
+    },
+    "message": {
+        "error": "Ocurrió un error",
+        "success": "Éxito",
+        "errorCredentialAws":"Obtención de claves secretas de aws",
+        "confirmContinue":"Se registró correctamente, ¿Desea volver agregar una nueva Idea con Valor?"
+    },
+    "sessionLogin": {
+        "lblTitle": "Base Architecture",
+        "lblEmail": "SSEE",
+        "lblNetworkUserEmail": " Usuario de Red",
+        "lblNetworkUser": " usuario@antamina.com",
+        "lblAccess": "Ingresar Aquí",
+        "lblNetworkUserStrategicPartner": "Usar mi DNI"
+    },
+    "action":{
+        "new":"Nuevo",
+        "edit":"Editar",
+        "save":"Guardar"
+    },    
+    "demo":{
+        "lblTitle":"Demo - Pantalla consulta",
+        "lblNew":"Nuevo",
+        "lblNumber":"Nro",
+        "lblTypeDocument":"Tipo Documento",
+        "lblFullName":"Nombres Completos",
+        "lblAction":"Acción",
+        "lblEdit":"Editar",
+        "lblDeactivate":"Desactivar",
+        "lblActivate":"Activar"
+    },
+    "typeGrid":{
+        "edit":"edit",
+        "button":"button",
+        "toggleOn":"toggleOn",
+        "toggleOff":"toggleOff"
+    },
+    "iconGrid":{
+        "penSquare":"fas fa-pen-square",
+        "toggleOff":"fas fa-toggle-on",
+        "toggleOn":"fas fa-toggle-off"
+    },
+    "keyGrid":{
+        "NameMasterTableTypeDocument":"NameMasterTableTypeDocument",
+        "DocumentNumber":"DocumentNumber",
+        "FullName":"FullName",
+        "Action":"action"
+    }
 }
